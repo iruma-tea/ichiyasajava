@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"Sample_Chapter2/src",
+			"Sample_Chapter3/src",
+		],
+		"java.project.outputPath": "bin",
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar"
+		],
+		"[java]": {
+			"editor.suggest.snippetsPreventQuickSuggestions": false,
+			"editor.formatOnSave": true,
+			"editor.defaultFormatter": "redhat.java",
+		}
+	}
+}
