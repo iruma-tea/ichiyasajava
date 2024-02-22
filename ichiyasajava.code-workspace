@@ -9,6 +9,7 @@
 			"Sample_Chapter2/src",
 			"Sample_Chapter3/src",
 			"Sample_Chapter4/src",
+			"Sample_Chapter5/src",
 		],
 		"java.project.outputPath": "bin",
 		"java.project.referencedLibraries": [
