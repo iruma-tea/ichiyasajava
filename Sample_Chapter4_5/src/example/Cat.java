@@ -1,13 +1,23 @@
 package example;
 
 public class Cat {
-    String name;
-    int age;
-    boolean hungry;
+    private String name;
+    private int age;
+    private boolean hungry;
+
+    private void printMessage(String message) {
+        System.out.println(name + "> " + message);
+    }
 
     public void eat() {
-        System.out.println(name + "> ご飯を食べるよ！おいしいにゃ～");
-        System.out.println(name + "> お腹が一杯になったにゃ～");
+        printMessage("ご飯を食べるよ！おいしいにゃ～");
+        printMessage("お腹が一杯になったにゃ～");
+        hungry = false;
+    }
+
+    public void eat(String food) {
+        printMessage(food + "ご飯を食べるよ！おいしいにゃ～");
+        printMessage("お腹が一杯になったにゃ～");
         hungry = false;
     }
 
@@ -15,9 +25,15 @@ public class Cat {
         return hungry;
     }
 
+    public void playToy() {
+        printMessage("おもちゃで遊ぶよ。楽しいにゃ～");
+        printMessage("遊んでお腹が減ったにゃ～");
+        hungry = true;
+    }
+
     public void playToy(String toy) {
-        System.out.println(name + "> " + toy + "で遊ぶよ。楽しいにゃ～");
-        System.out.println(name + "> 遊んでお腹が減ったにゃ～");
+        printMessage(toy + "で遊ぶよ。楽しいにゃ～");
+        printMessage("遊んでお腹が減ったにゃ～");
         hungry = true;
     }
 
@@ -43,8 +59,6 @@ public class Cat {
     }
 
     public void introduceMyself() {
-        String n = getName();
-        int a = getAge();
-        System.out.println("名前は" + n + "です。" + a + "歳です。");
+        System.out.println("名前は" + getName() + "です。" + getAge() + "歳です。");
     }
 }
